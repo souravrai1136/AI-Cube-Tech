@@ -183,7 +183,34 @@ export const HomePage: React.FC = () => {
       </section>
       */}
 
-      {/* 3. COURSE CATEGORIES SECTION */}
+      {/* 3. FEATURED RECORDED COURSES SECTION (Top Rated Masterclasses) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <div className="text-xs font-bold text-brand-600 uppercase tracking-wider mb-1">
+              Top Rated Masterclasses
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Featured Video Courses
+            </h2>
+          </div>
+          <Link
+            to="/courses"
+            className="text-sm font-semibold text-brand-600 hover:text-brand-700 flex items-center gap-1 group"
+          >
+            <span>See entire library</span>
+            <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {featuredCourses.map((course) => (
+            <CourseCard key={course.id} course={course} />
+          ))}
+        </div>
+      </section>
+
+      {/* 4. COURSE CATEGORIES SECTION (Structured Tracks) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div>
@@ -231,33 +258,6 @@ export const HomePage: React.FC = () => {
                 </span>
               </div>
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 4. FEATURED RECORDED COURSES SECTION */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
-          <div>
-            <div className="text-xs font-bold text-brand-600 uppercase tracking-wider mb-1">
-              Top Rated Masterclasses
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-              Featured Video Courses
-            </h2>
-          </div>
-          <Link
-            to="/courses"
-            className="text-sm font-semibold text-brand-600 hover:text-brand-700 flex items-center gap-1 group"
-          >
-            <span>See entire library</span>
-            <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuredCourses.map((course) => (
-            <CourseCard key={course.id} course={course} />
           ))}
         </div>
       </section>
