@@ -148,13 +148,13 @@ export const HomePage: React.FC = () => {
                 {/* Floating Mentor Pill */}
                 <div className="absolute -top-4 -right-4 hidden sm:flex items-center gap-2 bg-white p-2.5 rounded-2xl shadow-xl border border-slate-100 animate-float">
                   <img
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
-                    alt="Instructor Pushkar Rai"
-                    className="w-9 h-9 rounded-full object-cover ring-2 ring-brand-500"
+                    src="/assets/pushkar-rai-vector.svg"
+                    alt="Pushkar Rai (15+ Years Exp.)"
+                    className="w-10 h-10 rounded-full object-cover ring-2 ring-brand-500 bg-slate-50"
                   />
                   <div>
                     <p className="text-xs font-bold text-slate-900">Pushkar Rai</p>
-                    <p className="text-[10px] text-slate-500">Lead Technical Architect</p>
+                    <p className="text-[10px] text-emerald-600 font-semibold">15+ Years Exp.</p>
                   </div>
                 </div>
               </div>

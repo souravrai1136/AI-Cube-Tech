@@ -18,10 +18,10 @@ export const AboutPage: React.FC = () => {
   const instructors = [
     {
       name: 'Pushkar Rai',
-      title: 'Principal Technical Architect & Corporate Mentor',
+      title: 'Principal Technical Architect & Corporate Mentor (15+ Years Exp.)',
       company: 'Lead Instructor — Cloud, Fullstack & Data Systems',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
-      bio: 'Over 14 years architecting enterprise cloud platforms, data systems, and mentoring thousands of engineers across Python, R, AWS, Azure, Angular, React & SQL.',
+      avatar: '/assets/pushkar-rai-vector.svg',
+      bio: 'Over 15+ years architecting enterprise cloud platforms, data systems, and mentoring thousands of engineers across Python, R, AWS, Azure, Angular, React & SQL.',
     },
   ];
 

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="64" fill="url(#bgGrad)" />
+  
+  <!-- Subtle inner ring -->
+  <circle cx="64" cy="64" r="60" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.25" />
+
+  <!-- Body / Shoulders -->
+  <path d="M26 128 C26 96 42 86 64 86 C86 86 102 96 102 128 Z" fill="url(#shirtGrad)" />
+  
+  <!-- Collar / Shirt Detail -->
+  <polygon points="64,96 52,86 64,114 76,86" fill="#3b82f6" />
+  
+  <!-- Neck -->
+  <rect x="56" y="72" width="16" height="18" rx="4" fill="#fbbf24" />
+
+  <!-- Head -->
+  <ellipse cx="64" cy="54" rx="22" ry="24" fill="#fde68a" />
+  
+  <!-- Hair -->
+  <path d="M42 48 C42 30 50 22 64 22 C78 22 86 30 86 48 C82 44 76 42 64 42 C52 42 46 44 42 48 Z" fill="#1e1b4b" />
+  
+  <!-- Glasses Frame -->
+  <rect x="46" y="48" width="14" height="10" rx="3" fill="none" stroke="#1e1b4b" stroke-width="2.5" />
+  <rect x="68" y="48" width="14" height="10" rx="3" fill="none" stroke="#1e1b4b" stroke-width="2.5" />
+  <line x1="60" y1="53" x2="68" y2="53" stroke="#1e1b4b" stroke-width="2.5" />
+  
+  <!-- Eyes behind glasses -->
+  <circle cx="53" cy="53" r="2" fill="#1e1b4b" />
+  <circle cx="75" cy="53" r="2" fill="#1e1b4b" />
+  
+  <!-- Smile -->
+  <path d="M57 66 Q64 72 71 66" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Tech Expert Badge on bottom right -->
+  <circle cx="102" cy="102" r="15" fill="#10b981" stroke="#ffffff" stroke-width="2" />
+  <path d="M96 102 L100 106 L108 98" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

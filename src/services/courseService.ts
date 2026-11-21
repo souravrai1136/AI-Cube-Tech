@@ -1,7 +1,7 @@
 import { Course } from '../types';
 import { coursesData } from '../data/coursesData';
 
-const COURSES_STORAGE_KEY = 'aicubetech_courses_data_v5';
+const COURSES_STORAGE_KEY = 'aicubetech_courses_data_v6';
 
 export interface CourseFilterOptions {
   searchQuery?: string;
@@ -19,20 +19,26 @@ function getStoredCourses(): Course[] {
     localStorage.removeItem('aicubetech_courses_data_v2');
     localStorage.removeItem('aicubetech_courses_data_v3');
     localStorage.removeItem('aicubetech_courses_data_v4');
+    localStorage.removeItem('aicubetech_courses_data_v5');
 
     const stored = localStorage.getItem(COURSES_STORAGE_KEY);
     if (stored) {
       const parsed: Course[] = JSON.parse(stored);
-        if (
-          parsed.length !== coursesData.length ||
-          parsed.some((c) => c.price !== 5000 || c.instructor.name !== 'Pushkar Rai')
-        ) {
-          persistCourses(coursesData);
-          return coursesData;
-        }
-        return parsed;
+      if (
+        parsed.length !== coursesData.length ||
+        parsed.some(
+          (c) =>
+            c.price !== 5000 ||
+            c.instructor.name !== 'Pushkar Rai' ||
+            c.instructor.avatar !== '/assets/pushkar-rai-vector.svg'
+        )
+      ) {
+        persistCourses(coursesData);
+        return coursesData;
       }
-    } catch {
+      return parsed;
+    }
+  } catch {
       // Fallback to initial courses
     }
     return coursesData;

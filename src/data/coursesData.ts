@@ -3,9 +3,9 @@ import { Course, CourseReview } from '../types';
 export const PUSHKAR_RAI_INSTRUCTOR = {
   id: 'inst-pushkar',
   name: 'Pushkar Rai',
-  title: 'Senior Technical Lead & Enterprise Architect',
-  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
-  bio: 'Pushkar Rai is a seasoned technical lead and enterprise corporate mentor with over 14 years of production engineering experience across Python, R Programming, AWS Cloud, Azure Infrastructure, Angular, React JS, and SQL Database Systems.',
+  title: 'Senior Technical Lead & Enterprise Architect (15+ Yrs Exp.)',
+  avatar: '/assets/pushkar-rai-vector.svg',
+  bio: 'Pushkar Rai is a seasoned technical lead and enterprise corporate mentor with over 15+ years of production engineering experience across Python, R Programming, AWS Cloud, Azure Infrastructure, Angular, React JS, and SQL Database Systems.',
   rating: 4.9,
   studentsCount: 45000,
   coursesCount: 7,
