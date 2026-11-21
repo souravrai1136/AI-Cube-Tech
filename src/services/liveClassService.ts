@@ -1,13 +1,14 @@
 import { LiveClass, LiveClassStatus } from '../types';
 import { liveClassesData } from '../data/liveClassesData';
 
-const LIVE_CLASSES_STORAGE_KEY = 'aicubetech_live_classes_data_v3';
+const LIVE_CLASSES_STORAGE_KEY = 'aicubetech_live_classes_data_v4';
 
 function getStoredLiveClasses(): LiveClass[] {
   try {
     localStorage.removeItem('learnora_live_classes_data');
     localStorage.removeItem('learnora_live_classes_data_inr');
     localStorage.removeItem('aicubetech_live_classes_data_v2');
+    localStorage.removeItem('aicubetech_live_classes_data_v3');
 
     const stored = localStorage.getItem(LIVE_CLASSES_STORAGE_KEY);
     if (stored) {

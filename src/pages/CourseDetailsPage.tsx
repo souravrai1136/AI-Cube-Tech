@@ -393,11 +393,10 @@ export const CourseDetailsPage: React.FC = () => {
                 {/* Wishlist Button */}
                 <button
                   onClick={() => toggleWishlist(course.id, course.title)}
-                  className={`w-full py-2.5 px-4 rounded-xl border text-xs font-semibold flex items-center justify-center gap-2 transition-colors ${
-                    inWishlist
+                  className={`w-full py-2.5 px-4 rounded-xl border text-xs font-semibold flex items-center justify-center gap-2 transition-colors ${inWishlist
                       ? 'bg-rose-50 border-rose-200 text-rose-600'
                       : 'border-slate-200 text-slate-700 hover:bg-slate-50'
-                  }`}
+                    }`}
                 >
                   <Heart className={`w-4 h-4 ${inWishlist ? 'fill-current text-rose-500' : ''}`} />
                   <span>{inWishlist ? 'Saved in Wishlist' : 'Add to Wishlist'}</span>
@@ -441,7 +440,7 @@ export const CourseDetailsPage: React.FC = () => {
         isOpen={isPurchaseModalOpen}
         onClose={() => setIsPurchaseModalOpen(false)}
         course={course}
-        onSuccess={() => {}}
+        onSuccess={() => { }}
       />
     </div>
   );

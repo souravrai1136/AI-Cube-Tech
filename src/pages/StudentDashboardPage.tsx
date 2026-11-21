@@ -158,44 +158,40 @@ export const StudentDashboardPage: React.FC = () => {
         <nav className="flex space-x-6 overflow-x-auto scrollbar-none">
           <button
             onClick={() => handleTabChange('courses')}
-            className={`pb-4 px-1 text-sm font-semibold whitespace-nowrap border-b-2 flex items-center gap-2 transition-colors ${
-              activeTab === 'courses'
+            className={`pb-4 px-1 text-sm font-semibold whitespace-nowrap border-b-2 flex items-center gap-2 transition-colors ${activeTab === 'courses'
                 ? 'border-brand-600 text-brand-600'
                 : 'border-transparent text-slate-500 hover:text-slate-800'
-            }`}
+              }`}
           >
             <BookOpen className="w-4 h-4" />
             <span>My Enrolled Courses ({enrolledCourses.length})</span>
           </button>
           <button
             onClick={() => handleTabChange('live')}
-            className={`pb-4 px-1 text-sm font-semibold whitespace-nowrap border-b-2 flex items-center gap-2 transition-colors ${
-              activeTab === 'live'
+            className={`pb-4 px-1 text-sm font-semibold whitespace-nowrap border-b-2 flex items-center gap-2 transition-colors ${activeTab === 'live'
                 ? 'border-brand-600 text-brand-600'
                 : 'border-transparent text-slate-500 hover:text-slate-800'
-            }`}
+              }`}
           >
             <Radio className="w-4 h-4 text-rose-500" />
             <span>My Live Workshops ({registeredLiveList.length})</span>
           </button>
           <button
             onClick={() => handleTabChange('wishlist')}
-            className={`pb-4 px-1 text-sm font-semibold whitespace-nowrap border-b-2 flex items-center gap-2 transition-colors ${
-              activeTab === 'wishlist'
+            className={`pb-4 px-1 text-sm font-semibold whitespace-nowrap border-b-2 flex items-center gap-2 transition-colors ${activeTab === 'wishlist'
                 ? 'border-brand-600 text-brand-600'
                 : 'border-transparent text-slate-500 hover:text-slate-800'
-            }`}
+              }`}
           >
             <Heart className="w-4 h-4" />
             <span>Saved Wishlist ({wishlistCourses.length})</span>
           </button>
           <button
             onClick={() => handleTabChange('settings')}
-            className={`pb-4 px-1 text-sm font-semibold whitespace-nowrap border-b-2 flex items-center gap-2 transition-colors ${
-              activeTab === 'settings'
+            className={`pb-4 px-1 text-sm font-semibold whitespace-nowrap border-b-2 flex items-center gap-2 transition-colors ${activeTab === 'settings'
                 ? 'border-brand-600 text-brand-600'
                 : 'border-transparent text-slate-500 hover:text-slate-800'
-            }`}
+              }`}
           >
             <Settings className="w-4 h-4" />
             <span>Profile Settings</span>
