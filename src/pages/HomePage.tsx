@@ -163,7 +163,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 2. STATS SECTION (Sample Data) */}
+      {/* 2. STATS SECTION (Sample Data) - Commented out as requested
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
           <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-brand-600/20 rounded-full blur-3xl pointer-events-none" />
@@ -181,6 +181,7 @@ export const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* 3. COURSE CATEGORIES SECTION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
