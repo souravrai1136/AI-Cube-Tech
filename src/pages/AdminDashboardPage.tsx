@@ -60,15 +60,15 @@ export const AdminDashboardPage: React.FC = () => {
   const openAddModal = () => {
     setFormData({
       title: '',
-      category: 'Web Development',
+      category: 'Python & Data Science',
       tagline: '',
       description: '',
-      price: 1000,
-      originalPrice: 1999,
+      price: 5000,
+      originalPrice: 9999,
       isFree: false,
-      level: 'Intermediate',
+      level: 'All Levels',
       thumbnail: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80',
-      instructorName: 'Alexander Hayes',
+      instructorName: 'Pushkar Rai',
     });
     setEditingCourse(null);
     setIsAddCourseModalOpen(true);

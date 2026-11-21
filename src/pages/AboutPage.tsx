@@ -17,32 +17,11 @@ import { Breadcrumbs } from '../components/common/Breadcrumbs';
 export const AboutPage: React.FC = () => {
   const instructors = [
     {
-      name: 'Alexander Hayes',
-      title: 'Principal Software Architect',
-      company: 'Ex-Tech Lead, Distributed Systems',
+      name: 'Pushkar Rai',
+      title: 'Principal Technical Architect & Corporate Mentor',
+      company: 'Lead Instructor — Cloud, Fullstack & Data Systems',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
-      bio: 'Over 12 years building cloud platforms and mentoring thousands of frontend and fullstack engineers globally.',
-    },
-    {
-      name: 'Dr. Sophia Vance',
-      title: 'Frontend Systems Specialist',
-      company: 'Author & International Speaker',
-      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80',
-      bio: 'Leading authority on enterprise React architecture, web accessibility standards, and design systems.',
-    },
-    {
-      name: 'Maya Lin',
-      title: 'Design Director & UX Strategist',
-      company: 'Product Lead, Design Systems',
-      avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80',
-      bio: 'Human-computer interaction specialist designing seamless digital products used by millions of global consumers.',
-    },
-    {
-      name: 'James Thornton',
-      title: 'Senior Data Engineer',
-      company: 'Cloud Automation Architect',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
-      bio: 'Specialist in asynchronous Python architectures, distributed web crawling, and data infrastructure scaling.',
+      bio: 'Over 14 years architecting enterprise cloud platforms, data systems, and mentoring thousands of engineers across Python, R, AWS, Azure, Angular, React & SQL.',
     },
   ];
 
@@ -120,8 +99,8 @@ export const AboutPage: React.FC = () => {
               desc: 'Every instructor is an active technical contributor or tech lead, ensuring you learn modern practices rather than outdated syntax.',
             },
             {
-              title: 'Verified Proof of Mastery',
-              desc: 'Certificates of completion verifying your hands-on code project deliveries to showcase to prospective employers.',
+              title: 'Hands-on Production Mastery',
+              desc: 'Deep modular coding curriculum and production-level architecture blueprints to showcase to prospective employers.',
             },
             {
               title: 'Global Community Support',

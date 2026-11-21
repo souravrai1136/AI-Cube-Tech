@@ -103,7 +103,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course, className = '' }
             className="w-7 h-7 rounded-full object-cover ring-1 ring-slate-200"
           />
           <span className="text-xs font-medium text-slate-600 truncate">
-            {course.instructor.name}
+            Your Instructor: <span className="font-semibold text-slate-800">{course.instructor.name}</span>
           </span>
         </div>
 

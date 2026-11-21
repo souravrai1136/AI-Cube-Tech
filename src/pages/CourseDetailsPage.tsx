@@ -6,6 +6,7 @@ import {
   Globe,
   Calendar,
   CheckCircle,
+  CheckCircle2,
   PlayCircle,
   Heart,
   Share2,
@@ -158,7 +159,7 @@ export const CourseDetailsPage: React.FC = () => {
                   className="w-10 h-10 rounded-full object-cover ring-2 ring-brand-500/40"
                 />
                 <div>
-                  <p className="text-xs text-slate-400">Created by</p>
+                  <p className="text-xs text-slate-400">Your Instructor</p>
                   <p className="text-sm font-bold text-white hover:text-brand-300 transition-colors">
                     {course.instructor.name}
                   </p>
@@ -248,7 +249,7 @@ export const CourseDetailsPage: React.FC = () => {
 
             {/* Instructor Profile Card */}
             <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
-              <h3 className="text-lg font-bold text-slate-900">Your Instructor</h3>
+              <h3 className="text-lg font-bold text-slate-900">Your Instructor : {course.instructor.name}</h3>
               <div className="flex flex-col sm:flex-row gap-5 items-start">
                 <img
                   src={course.instructor.avatar}
@@ -410,11 +411,11 @@ export const CourseDetailsPage: React.FC = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <BookOpen className="w-4 h-4 text-slate-400" />
-                    <span>{course.totalLessons} modular coding lectures</span>
+                    <span>{course.totalLessons} modular coding lectures & index topics</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Award className="w-4 h-4 text-slate-400" />
-                    <span>Certificate of completion</span>
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                    <span>Hands-on practice exercises & project codebases</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-slate-400" />

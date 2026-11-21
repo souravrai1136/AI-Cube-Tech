@@ -65,7 +65,7 @@ export const PurchaseModal: React.FC<PurchaseModalProps> = ({
       isOpen={isOpen}
       onClose={handleReset}
       title={isSuccess ? 'Enrollment Confirmed!' : `Complete Enrollment`}
-      description={isSuccess ? undefined : `Access full curriculum, downloadable resources & certificate`}
+      description={isSuccess ? undefined : `Access full curriculum modules, downloadable code & practical exercises`}
       size="md"
     >
       {isSuccess ? (

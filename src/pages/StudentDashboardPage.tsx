@@ -128,10 +128,10 @@ export const StudentDashboardPage: React.FC = () => {
           iconColor="text-brand-600"
         />
         <StatsCard
-          title="Completed Certificates"
+          title="Completed Courses"
           value={completedCourses.length}
-          change="Lifetime verified"
-          icon={Award}
+          change="Modules completed"
+          icon={CheckCircle2}
           iconBgColor="bg-emerald-50"
           iconColor="text-emerald-600"
         />
