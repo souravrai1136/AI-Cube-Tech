@@ -17,13 +17,16 @@ export interface CheckoutRequest {
   courseTitle: string;
   amount: number;
   billingName: string;
-  billingEmail: string;
-  paymentMethod: 'card' | 'paypal' | 'free_enroll';
+  billingEmail?: string;
+  mobileNumber?: string;
+  upiId?: string;
+  paymentMethod: 'upi' | 'card' | 'paypal' | 'free_enroll';
 }
 
 export interface CheckoutResult {
   success: boolean;
   transactionId: string;
+  utrNumber: string;
   message: string;
   timestamp: string;
   isDemo: true;
@@ -37,12 +40,15 @@ export const paymentService = {
     // Simulate gateway roundtrip
     await new Promise((resolve) => setTimeout(resolve, 800));
 
+    const utr = `${Math.floor(400000000000 + Math.random() * 599999999999)}`;
+
     return {
       success: true,
-      transactionId: `DEMO-TX-${Math.random().toString(36).substring(2, 9).toUpperCase()}`,
+      transactionId: `UPI-TXN-${Math.random().toString(36).substring(2, 9).toUpperCase()}`,
+      utrNumber: utr,
       message: request.amount === 0
         ? `Successfully enrolled in "${request.courseTitle}" for free!`
-        : `Simulated payment of ${formatCurrency(request.amount)} approved for "${request.courseTitle}".`,
+        : `UPI payment of ${formatCurrency(request.amount)} verified for "${request.courseTitle}".`,
       timestamp: new Date().toISOString(),
       isDemo: true,
     };
